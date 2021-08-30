@@ -22,7 +22,7 @@ Monday 11.00-11.45 (TBA)
 | 04.10.2021  | Hubert | NGS intro; exploratory data analysis | EDA in R | | |
 | 11.10.2021  | Hubert | mapping  | Rsubread | | |
 | 18.10.2021  | Mark | limma + friends | linear model simulation + design matrices | | |
-| 25.10.2021  | Hubert | RNA-seq quantification | RSEM  | | |
+| 25.10.2021  | Hubert | RNA-seq quantification | RSEM  | X | X |
 | 01.11.2021  | Mark | edgeR+friends 1 | basic edgeR/voom | X | X |
 | 08.11.2021  | Mark | edgeR+friends 2 | advanced edgeR/voom| X | X |
 | 15.11.2021  | TBA | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. | X | X |
