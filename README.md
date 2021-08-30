@@ -15,29 +15,23 @@ Monday 11.00-11.45 (TBA)
 
 ## Schedule
 
-| Date  | Lecturer | Topic | Exercise | JC1 | JC2 |  
-| --- | --- | --- | --- | --- | --- | --- |  
-| 20.09.2021  | Mark + Hubert  | admin; mol. bio. basics | R markdown; git(hub) | | |  
-| 27.09.2021  | Mark | interactive technology/statistics session  | group exercise: technology pull request | | |  
-| 04.10.2021  | Hubert | NGS intro; exploratory data analysis | EDA in R | | |  
-| 11.10.2021  | Hubert | mapping  | Rsubread | | |  
-| 18.10.2021  | Mark | limma + friends | linear model simulation + design matrices | | |  
-| 25.10.2021  | Hubert | RNA-seq quantification    | RSEM  | | |  
-| 01.11.2021  | Mark | edgeR+friends 1 | basic edgeR/voom | X | X |   
-| 08.11.2021  | Mark | edgeR+friends 2  | X | X |  
-| 15.11.2021  | TBA | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. | X | X |  
-| 22.11.2021  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering | X | X |  
-| 29.11.2021  | TBA | hands-on session #2: cytometry  | cytof null comparison | X | X |  
-| 06.12.2021  | Mark | single-cell 2: clustering, marker gene DE  | marker gene DE | X | X |  
-| 13.12.2021  | Pierre-Luc | hands-on session #3: single-cell RNA-seq (cell type definition, differential state)  | full scRNA-seq pipeline | X | X |  
-| 20.12.2021  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding | X | X |  
+| Date  | Lecturer | Topic | Exercise | JC1 | JC2 |
+| --- | --- | --- | --- | --- | --- |
+| 20.09.2021  | Mark + Hubert  | admin; mol. bio. basics | R markdown; git(hub) | | |
+| 27.09.2021  | Mark | interactive technology/statistics session  | group exercise: technology pull request | | |
+| 04.10.2021  | Hubert | NGS intro; exploratory data analysis | EDA in R | | |
+| 11.10.2021  | Hubert | mapping  | Rsubread | | |
+| 18.10.2021  | Mark | limma + friends | linear model simulation + design matrices | | |
+| 25.10.2021  | Hubert | RNA-seq quantification | RSEM  | | |
+| 01.11.2021  | Mark | edgeR+friends 1 | basic edgeR/voom | X | X |
+| 08.11.2021  | Mark | edgeR+friends 2 | advanced edgeR/voom| X | X |
+| 15.11.2021  | TBA | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. | X | X |
+| 22.11.2021  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering | X | X |
+| 29.11.2021  | TBA | hands-on session #2: cytometry  | cytof null comparison | X | X |
+| 06.12.2021  | Mark | single-cell 2: clustering, marker gene DE  | marker gene DE | X | X |
+| 13.12.2021  | Pierre-Luc | hands-on session #3: single-cell RNA-seq (cell type definition, differential state)  | full scRNA-seq pipeline | X | X |
+| 20.12.2021  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding | X | X |
 
-| a  |  b |
-|---|---|
-|   |   |
-|   |   |
-|   |   |
-|   |   |
 
 ## Course material
 
