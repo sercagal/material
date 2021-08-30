@@ -11,7 +11,7 @@ Monday 11.00-11.45 (TBA)
 
 [Dr. Hubert Rehrauer](http://www.fgcz.ch/the-center/people/rehrauer.html), Group Leader of Genome Informatics at [FGCZ](http://www.fgcz.ch/)  
 
-[Prof. Dr. Mark Robinson](https://robinsonlabuzh.github.io/), Associate Professor of Statistical Genomics, [IMLS](http://www.imls.uzh.ch/index.html), UZH  
+[Prof. Dr. Mark Robinson](https://robinsonlabuzh.github.io/), Associate Professor of Statistical Genomics, [DMLS](https://www.mls.uzh.ch/en.html), UZH  
 
 ## Schedule
 
