@@ -3,6 +3,7 @@
 
 ## Distributions
 ![](./distributions.jpg)
+<img src="distributions.jpg">
 
 ## Statistical Models
 ![](statistical_models.jpg)
