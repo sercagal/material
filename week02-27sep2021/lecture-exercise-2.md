@@ -56,7 +56,7 @@ ___
 
 #### e.g., microarray -> gene expression -> normally distributed (log intensities)
 
-# Part 5 - Pick a *Technology*/*Application* from [*Seq](https://liorpachter.wordpress.com/seq/) (or find another newer one not in the list) and ..
+# Part 5 - Make the link between technology/application/statistics for a specific method
 
 ___
 ## Exercise 2 part b (in same groups): pick a *Technology*/*Application* from [*Seq](https://liorpachter.wordpress.com/seq/) (or find another newer one not in the list) and ..
