@@ -5,13 +5,13 @@
 ![](distributions.jpg)
 
 ## Statistical Models
-![](statistical-models.jpg)
+![](statistical_models.jpg)
 
 ## Methods for Estimation
-![](estimation-methods.jpg)
+![](estimation_methods.jpg)
 
 ## Methods for Hypothesis Testing
-![](statistical-tests.jpg)
+![](hypothesis_testing.jpg)
 
 # Part 2 - Brainstorm: Omics Technologies in Biology
 ![](technologies.jpg)
@@ -29,6 +29,17 @@ o <- order(df$row)
 df[o,]
 ```
 
+
+```{r}
+  row             tech
+1   0       microarray
+3   1   bisulphite-seq
+5   2     10x-chromium
+4   3        mass-spec
+2   4 illumina-rna-seq
+6   5  oxford-nanopore
+```
+
 ___
 ## Exercise 2 part a (as a group)
 #### produce a 2-3 point summary of "how it works"
@@ -41,7 +52,7 @@ ___
 ![](applications.jpg)
 
 # Part 4 - Brainstorm: Linking Technologies to Applications to Statistics
-![](linking-tech-app-stats.jpg)
+![](link.jpg)
 
 #### e.g., microarray -> gene expression -> normally distributed (log intensities)
 
