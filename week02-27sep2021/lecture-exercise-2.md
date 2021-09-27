@@ -2,7 +2,7 @@
 # Part 1 - Brainstorm: Statistics
 
 ## Distributions
-![](distributions.jpg)
+![](./distributions.jpg)
 
 ## Statistical Models
 ![](statistical_models.jpg)
@@ -30,7 +30,7 @@ df[o,]
 ```
 
 
-```{r}
+```
   row             tech
 1   0       microarray
 3   1   bisulphite-seq
