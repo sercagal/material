@@ -18,13 +18,23 @@ restriction enzymes to cut the desired fragments from the DNA and on the use of
 molecular identifiers to pinpoint the particular individual and their sequencing 
 reads.
 
-#### Reference
+### Link
+
+| Technology        | Application | Statistics|        
+| ------------- |:-------------:| :-------------:| 
+| RAD-Seq      |  (fractional) genome sequencing | TMM normalization, pairwise exact tests of negative binomial distribution, Benjamini-Hochberg adjusted significance levels (to control FDR), Average Linkage Clustering, PCA, Smoothing Splines, Fisher's exact test (Schield et al.)|
+
+#### References
+
 * Baird, N.A., Etter, P.D., Atwood, T.S., Currey, M.C., Shiver, A.L., Lewis, Z.A., Selker, E.U., Cresko, W.A. and Johnson, E.A., 2008. Rapid SNP discovery and genetic mapping using sequenced RAD markers. PloS one, 3(10), p.e3376.
 * Davey, J.W. and Blaxter, M.L., 2010. RADSeq: next-generation population genetics. Briefings in functional genomics, 9(5-6), pp.416-423.
+* Schield, D.R., Walsh, M.R., Card, D.C., Andrew, A.L., Adams, R.H. and Castoe, T.A., 2016. EpiRADseq: scalable analysis of genomewide patterns of
+methylation using next-generation sequencing, Methods in Ecology and Evolution, 7, p.63.
 
 
 
 #### GitHub Usernames 
+
 * KalinNonchev
 * svollm
 * tudorandreij
