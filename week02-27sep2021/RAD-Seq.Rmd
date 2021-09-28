@@ -8,14 +8,15 @@ output: html_document
 ### Summary RAD-Seq
 
 Restriction site-associated DNA sequencing (RAD-Seq) is a method that provides 
-genomic data for any organism with high resolution at fair price by reducing the 
+genomic data with high resolution for any organism at fair price by reducing the 
 complexity of the target genome across many individuals. \
 RAD-Seq allows the identification and the scoring of many genetic markers 
 (microsatellites, single nucleotide polymorphisms, insertion–deletion polymorphisms, 
-etc) over a group of samples by preprocessing the raw DNA material and then using the
-Illumina technology underneath. The preprocessing step is based on the use of 
-restriction enzymes to cut the desired fragments from the DNA and on the use of molecular 
-identifiers to pinpoint the particular individual and their sequencing reads.
+etc) over a group of samples by preprocessing the raw DNA material and then utilizing 
+the Illumina technology underneath. The preprocessing step is based on the use of 
+restriction enzymes to cut the desired fragments from the DNA and on the use of 
+molecular identifiers to pinpoint the particular individual and their sequencing 
+reads.
 
 #### Reference
 * Baird, N.A., Etter, P.D., Atwood, T.S., Currey, M.C., Shiver, A.L., Lewis, Z.A., Selker, E.U., Cresko, W.A. and Johnson, E.A., 2008. Rapid SNP discovery and genetic mapping using sequenced RAD markers. PloS one, 3(10), p.e3376.
