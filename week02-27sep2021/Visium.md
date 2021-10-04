@@ -15,7 +15,7 @@ Technology:
 Application:
 
 Statistics:
-* quality score $Q=-10log(e)$, where e is the error probability
+* quality score ![equation](Q=-10log(e)), where e is the error probability
 
 
 # Exercise 2a
