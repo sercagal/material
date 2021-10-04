@@ -20,7 +20,7 @@ Statistics:
 # Exercise 2a
 
 ### 10x Visium
-10x Visium is a spatial transcriptomics technique. It can be used to determine the concentration of RNAs in different parts of a tissue. On one slide there are four capture areas on which tissue can be placed. In the capture area there are barcoded spots with oligonucleotides. The tissue is permeabalized and the RNA binds to the oligonucleotides, cDNA is synthesized and sequenced. 
+10x Visium is a spatial transcriptomics technique. It can be used to determine the concentration of RNAs in different parts of a tissue. On one slide there are four capture areas on which tissue can be placed. In the capture area there are barcoded spots with oligonucleotides. The tissue is fixed and permeabalized and the RNA binds to the oligonucleotides, cDNA is synthesized and sequenced. 
 
 ### Resources:
 * [10x Company Website](https://www.10xgenomics.com/products/spatial-gene-expression)
