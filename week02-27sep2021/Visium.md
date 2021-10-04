@@ -11,11 +11,18 @@ Summary about the technology:
 
 
 Technology:
+* rolling-circle RT:
 
 Application:
+Understanding evolution of virus populations, which is inadequatily studied with NGS methods.
 
 Statistics:
 * quality score Q=-10log(e), where e is the error probability
+* p value to determine significance of beneficial mutations
+
+#### Sources:
+* [Original paper]https://www.nature.com/articles/nature12861
+* [Summary by Illumina]https://www.illumina.com/science/sequencing-method-explorer/kits-and-arrays/cirseq.html
 
 
 # Exercise 2a
