@@ -5,7 +5,7 @@
 * cell0126
 * licrone
 
-### Technology and Application
+### Circular sequencing (CirSeq)
 
 Summary about the technology:
 
@@ -15,6 +15,7 @@ Technology:
 Application:
 
 Statistics:
+* quality score $Q=-10log(e), where e is the error probability
 
 
 # Exercise 2a
