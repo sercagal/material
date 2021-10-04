@@ -9,12 +9,13 @@
 
 Summary:
 
+As NGS with bacterium free cloning is not accurate enough to detect rare mutations in viruses, CirSeq uses a different amplification method. RNA fragments are circulized and then cDNA is produced via rolling circle reverse transcription. As there are now multiple copies of one circle of RNA, they can be aligned and sequencing errors can be detected.
+
 ![Scheme](cirseq.png)
 
-
-
 Technology:
-* rolling-circle RT:
+* circularisation of RNA
+* rolling-circle reverse transcription
 
 Application:
 Understanding evolution of virus populations, which is inadequatily studied with NGS methods.
