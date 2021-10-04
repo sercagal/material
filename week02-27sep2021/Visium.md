@@ -7,7 +7,10 @@
 
 ### Circular sequencing (CirSeq)
 
-Summary about the technology:
+Summary:
+
+![Scheme](scheme.jpg)
+
 
 
 Technology:
