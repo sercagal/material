@@ -9,7 +9,7 @@
 
 Summary:
 
-![Scheme](scheme.jpg)
+![Scheme](cirqueseq.jpg)
 
 
 
