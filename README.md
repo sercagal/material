@@ -24,7 +24,7 @@ Monday 11.00-11.45 (Y27-H-46)
 | 18.10.2021  | Mark | limma + friends | linear model simulation + design matrices | | |
 | 25.10.2021  | Hubert | RNA-seq quantification | RSEM  | X | X |
 | 01.11.2021  | Mark | edgeR+friends 1 | basic edgeR/voom | X | X |
-| 08.11.2021  | Mark | edgeR+friends 2 | advanced edgeR/voom| X | X |
+| 08.11.2021  | Mark | edgeR+friends 2 | advanced edgeR/voom| TB OF | X |
 | 15.11.2021  | TBA | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. | X | X |
 | 22.11.2021  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering | clustering | X | X |
 | 29.11.2021  | TBA | hands-on session #2: cytometry  | cytof null comparison | X | X |
