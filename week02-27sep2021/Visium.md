@@ -26,3 +26,4 @@ Statistics:
 * [10x Company Website](https://www.10xgenomics.com/products/spatial-gene-expression)
 * [Description by FGZ](https://fgcz.ch/omics_areas/transcriptomics_uc/applications/Spatial-transcriptomics.html)
 * [An application of the technique - see supplementary material](https://www.biorxiv.org/content/10.1101/2020.11.17.386458v2)
+* [An explanation video by 10x](https://www.youtube.com/watch?v=VwNk4d-0RJc)
