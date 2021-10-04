@@ -25,7 +25,7 @@ Monday 11.00-11.45 (Y27-H-46)
 | 25.10.2021  | Hubert | RNA-seq quantification | RSEM  | X | X |
 | 01.11.2021  | Mark | edgeR+friends 1 | basic edgeR/voom | X | X |
 | 08.11.2021  | Mark | edgeR+friends 2 | advanced edgeR/voom| X | X |
-| 15.11.2021  | TBA | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. | X | X |
+| 15.11.2021  | TBA | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. | [Differential abundance testing on single-cell data using k-nearest neighbor graphs](https://www.nature.com/articles/s41587-021-01033-z) (VW, JL) | X |
 | 22.11.2021  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering | clustering | X | X |
 | 29.11.2021  | TBA | hands-on session #2: cytometry  | cytof null comparison | X | X |
 | 06.12.2021  | Mark | single-cell 2: clustering, marker gene DE  | marker gene DE | X | X |
