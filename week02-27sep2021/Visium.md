@@ -18,7 +18,7 @@ Technology:
 * virus amplification to increase the viral RNA content
 * fragmentation and circularisation of RNA
 * rolling-circle reverse transcription creates linked repeats of genomic material from one individual virus in the population
-* cloned by stadard mRNA sequencing
+* cloned by standard mRNA sequencing
 * Illumina MiSeq sequencing
 
 Application:
