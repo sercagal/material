@@ -23,7 +23,7 @@ Monday 11.00-11.45 (Y27-H-46)
 | 11.10.2021  | Hubert | mapping  | Rsubread | | |
 | 18.10.2021  | Mark | limma + friends | linear model simulation + design matrices | | |
 | 25.10.2021  | Hubert | RNA-seq quantification | RSEM  | X | X |
-| 01.11.2021  | Mark | edgeR+friends 1 | basic edgeR/voom | X | X |
+| 01.11.2021  | Mark | edgeR+friends 1 | basic edgeR/voom | [OUTRIDER: A Statistical Method for Detecting Aberrantly Expressed Genes in RNA Sequencing Data](https://www.cell.com/ajhg/fulltext/S0002-9297(18)30401-4) (BT, KN)  | X |
 | 08.11.2021  | Mark | edgeR+friends 2 | advanced edgeR/voom| X | X |
 | 15.11.2021  | TBA | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. | X | X |
 | 22.11.2021  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering | clustering | X | X |
