@@ -33,7 +33,7 @@ Statistics:
 # Exercise 2a
 
 ### 10x Visium
-10x Visium is a spatial transcriptomics technique that combines tissue visualization and RNA sequencing. The method is based on a slide that provides four capturing areas with 5000 barcoded spots containing oligosaccharides. Fresh frozen samples are placed on these capturing areas. The tissue can be stained and imaged by routine histology methods. Afterwards the tissue is fixed and permeabalized and the released RNA binds to the oligonucleotides, cDNA is synthesized and sequenced by standard short sequencing methods.
+10x Visium is a spatial transcriptomics technique that combines tissue visualization and RNA sequencing. The method is based on a slide that provides four capture areas with 5000 barcoded spots containing oligosaccharides. Fresh frozen samples are placed on these capturing areas. The tissue can be stained and imaged by routine histology methods. Afterwards the tissue is fixed and permeabalized and the released RNA binds to the oligonucleotides, cDNA is synthesized and sequenced by standard short sequencing methods.
 
 ![Company work flow](https://res.cloudinary.com/dlg7p2kji/image/upload/f_auto,q_auto,w_680,h_510,c_limit/v1578967934/blog/10x_BR060_Visium-Spatial-Brochure_Figures-01.jpg)
 
