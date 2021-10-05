@@ -23,10 +23,10 @@ Monday 11.00-11.45 (Y27-H-46)
 | 11.10.2021  | Hubert | mapping  | Rsubread | | |
 | 18.10.2021  | Mark | limma + friends | linear model simulation + design matrices | | |
 | 25.10.2021  | Hubert | RNA-seq quantification | RSEM  | X | X |
-| 01.11.2021  | Mark | edgeR+friends 1 | basic edgeR/voom | X | X |
-| 08.11.2021  | Mark | edgeR+friends 2 | advanced edgeR/voom| X | X |
+| 01.11.2021  | Mark | edgeR+friends 1 | basic edgeR/voom | [OUTRIDER: A Statistical Method for Detecting Aberrantly Expressed Genes in RNA Sequencing Data](https://www.cell.com/ajhg/fulltext/S0002-9297(18)30401-4) (BT, KN)  | X |
+| 08.11.2021  | Mark | edgeR+friends 2 | advanced edgeR/voom| [ZeitZeiger: supervised learning for high-dimensional data from an oscillatory system](https://dx.doi.org/10.1093%2Fnar%2Fgkw030) (TB, OF) | X |
 | 15.11.2021  | TBA | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. | [Differential abundance testing on single-cell data using k-nearest neighbor graphs](https://www.nature.com/articles/s41587-021-01033-z) (VW, JL) | X |
-| 22.11.2021  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering | clustering | X | X |
+| 22.11.2021  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering | clustering | [title](link) (HJ,SK) | X |
 | 29.11.2021  | TBA | hands-on session #2: cytometry  | cytof null comparison | X | X |
 | 06.12.2021  | Mark | single-cell 2: clustering, marker gene DE  | marker gene DE | X | X |
 | 13.12.2021  | Pierre-Luc | hands-on session #3: single-cell RNA-seq (cell type definition, differential state)  | full scRNA-seq pipeline | X | X |
