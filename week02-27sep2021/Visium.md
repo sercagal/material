@@ -22,6 +22,7 @@ Understanding evolution of virus populations, which is inadequatily studied with
 
 Statistics:
 * quality score Q=-10log(e), where e is the error probability
+* comparing the different repeats helps to differentiate between sequencing errors and low-frequency mutations
 * p value to determine significance of beneficial mutations
 
 #### Sources:
