@@ -22,7 +22,7 @@ Technology:
 * Illumina MiSeq sequencing
 
 Application:
-Understanding the rapid evolution of virus populations including low-frequency mutations which are inadequatley detected with NGS. Additionally to traditional sequencing, more complex information can be obtained as for exmaple the link between fitness values and the corresponding mutations or the definition of mutation rates within a population.
+* Understanding the rapid evolution of virus populations including low-frequency mutations which are inadequatley detected with NGS. Additionally to traditional sequencing, more complex information can be obtained as for exmaple the link between fitness values and the corresponding mutations or the definition of mutation rates within a population.
 
 Statistics:
 * As part of the method: comparing the different repeats helps to differentiate between sequencing errors and low-frequency mutations;  quality score Q=-10log(e), where e is the error probability
