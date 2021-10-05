@@ -27,7 +27,7 @@ Statistics:
 
 #### Sources:
 * [Original paper](https://www.nature.com/articles/nature12861)
-* [Summary by Illumina](https://www.illumina.com/science/sequencing-method-explorer/kits-and-arrays/cirseq.html)
+* [Summary by Illumina and image source](https://www.illumina.com/science/sequencing-method-explorer/kits-and-arrays/cirseq.html)
 
 
 # Exercise 2a
