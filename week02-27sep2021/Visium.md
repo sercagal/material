@@ -9,7 +9,7 @@
 
 Summary:
 
-As NGS with bacterium free cloning is not accurate enough to detect rare mutations in viruses, CirSeq uses a different amplification method. RNA fragments are circulized and then cDNA is produced via rolling circle reverse transcription. As there are now multiple linked copies of an RNA fragment, there sequences can be compared and sequencing errors can be detected.
+As NGS is not accurate enough to detect rare mutations in viruses, CirSeq introduces an additional error correction mechanism. RNA fragments are circulized and then cDNA is produced via rolling circle reverse transcription. As there are now multiple linked repeats for one RNA fragment, their sequences can be compared and sequencing errors can be detected. In this way a consensus sequence for the RNA fragment is determined.
 
 ![Scheme](cirseq.png)
 
