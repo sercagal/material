@@ -4,6 +4,7 @@
 
 * cell0126 (Wiona Glänzer)
 * licrone (Lisa)
+* lorenzoguerci (Lorenzo Guerci)
 
 ### Circular sequencing (CirSeq)
 
