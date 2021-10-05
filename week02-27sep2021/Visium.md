@@ -9,21 +9,21 @@
 
 Summary:
 
-As NGS with bacterium free cloning is not accurate enough to detect rare mutations in viruses, CirSeq uses a different amplification method. RNA fragments are circulized and then cDNA is produced via rolling circle reverse transcription. As there are now multiple copies of one circle of RNA, they can be aligned and sequencing errors can be detected.
+As NGS with bacterium free cloning is not accurate enough to detect rare mutations in viruses, CirSeq uses a different amplification method. RNA fragments are circulized and then cDNA is produced via rolling circle reverse transcription. As there are now multiple linked copies of an RNA fragment, there sequences can be compared and sequencing errors can be detected.
 
 ![Scheme](cirseq.png)
 
 Technology:
 * circularisation of RNA
-* rolling-circle reverse transcription
+* rolling-circle reverse transcription creates linked repeats of genomic material from one individual virus in the population
 
 Application:
-Understanding evolution of virus populations, which is inadequatily studied with NGS methods.
+Understanding evolution of virus populations including low-frequency mutations which are inadequatley detected with NGS
 
 Statistics:
-* quality score Q=-10log(e), where e is the error probability
-* comparing the different repeats helps to differentiate between sequencing errors and low-frequency mutations
-* p value to determine significance of beneficial mutations
+* As part of the method: comparing the different repeats helps to differentiate between sequencing errors and low-frequency mutations;  quality score Q=-10log(e), where e is the error probability
+* To show the usefulness and accuracy of the method: mutation frequencies and transition-to-transversion ratios of polio viruses was determined and compared to previous and expected results, fitness distributions for mutations
+* For the study of the virus population: one-sided binomial test to determine significance of mutations, p value to determine wheter the mutation being beneficial is significant
 
 #### Sources:
 * [Original paper](https://www.nature.com/articles/nature12861)
