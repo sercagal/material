@@ -2,8 +2,8 @@
 
 ### Github Usernames
 
-* cell0126
-* licrone
+* cell0126 (Wiona Glänzer)
+* licrone (Lisa)
 
 ### Circular sequencing (CirSeq)
 
