@@ -25,8 +25,8 @@ Statistics:
 * p value to determine significance of beneficial mutations
 
 #### Sources:
-* [Original paper]https://www.nature.com/articles/nature12861
-* [Summary by Illumina]https://www.illumina.com/science/sequencing-method-explorer/kits-and-arrays/cirseq.html
+* [Original paper](https://www.nature.com/articles/nature12861)
+* [Summary by Illumina](https://www.illumina.com/science/sequencing-method-explorer/kits-and-arrays/cirseq.html)
 
 
 # Exercise 2a
