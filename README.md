@@ -28,7 +28,7 @@ Monday 11.00-11.45 (Y27-H-46)
 | 15.11.2021  | TBA | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. | [Differential abundance testing on single-cell data using k-nearest neighbor graphs](https://www.nature.com/articles/s41587-021-01033-z) (VW, JL) | X |
 | 22.11.2021  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering | clustering | [title](link) (HJ,SK) | X |
 | 29.11.2021  | TBA | hands-on session #2: cytometry  | cytof null comparison | X | X |
-| 06.12.2021  | Mark | single-cell 2: clustering, marker gene DE  | marker gene DE | [Causal inference in genetic trio studies](https://www.pnas.org/content/117/39/24117) (CG) | X |
+| 06.12.2021  | Mark | single-cell 2: clustering, marker gene DE  | marker gene DE | [Causal inference in genetic trio studies](https://www.pnas.org/content/117/39/24117) (CG, DC) | X |
 | 13.12.2021  | Pierre-Luc | hands-on session #3: single-cell RNA-seq (cell type definition, differential state)  | full scRNA-seq pipeline | X | X |
 | 20.12.2021  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding | X | X |
 
