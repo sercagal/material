@@ -31,7 +31,7 @@ Monday 11.00-11.45 (Y27-H-46)
 | 06.12.2021  | Mark | single-cell 2: clustering, marker gene DE  | marker gene DE | [Causal inference in genetic trio studies](https://www.pnas.org/content/117/39/24117) (CG, DC) | X |
 | 13.12.2021  | Pierre-Luc | hands-on session #3: single-cell RNA-seq (cell type definition, differential state)  | full scRNA-seq pipeline | X | X |
 | 20.12.2021  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding | X | X |
-
+ 
  
 ## Course material
 
