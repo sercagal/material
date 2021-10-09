@@ -29,7 +29,7 @@ Monday 11.00-11.45 (Y27-H-46)
 | 22.11.2021  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering | clustering | [title](link) (HJ,SK) | [A variable selection approach for highly correlated predictors in high-dimensional genomic data](https://academic.oup.com/bioinformatics/article/37/16/2238/6146520?login=true) (SV,PN) |
 | 29.11.2021  | TBA | hands-on session #2: cytometry  | cytof null comparison | X | X |
 | 06.12.2021  | Mark | single-cell 2: clustering, marker gene DE  | marker gene DE | [Causal inference in genetic trio studies](https://www.pnas.org/content/117/39/24117) (CG, DC) | X |
-| 13.12.2021  | Pierre-Luc | hands-on session #3: single-cell RNA-seq (cell type definition, differential state)  | full scRNA-seq pipeline | [CellPhoneDB: inferring cell–cell communication from combined expression of multi-subunit ligand–receptor complexes](https://www.nature.com/articles/s41596-020-0292-x) (KC, SG) | X |
+| 13.12.2021  | Pierre-Luc | hands-on session #3: single-cell RNA-seq (cell type definition, differential state)  | full scRNA-seq pipeline | [CellPhoneDB: inferring cell–cell communication from combined expression of multi-subunit ligand–receptor complexes](https://www.nature.com/articles/s41596-020-0292-x) (KC, SG) | [Independent component analysis based gene co-expression network inference (ICAnet) to decipher functional modules for better single-cell clustering and batch integration](https://academic.oup.com/nar/article/49/9/e54/6146629) (JS, NZ) |
 | 20.12.2021  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding | X | X |
  
 
