@@ -185,6 +185,80 @@ pre code {
 </li>
 <li>What reporting options are available?</li>
 </ul>
+<p><br />
+</p>
+<div id="bowtie2" class="section level4">
+<h4><a href="http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml">bowtie2</a></h4>
+<div id="scoring" class="section level5">
+<h5><strong>Scoring</strong></h5>
+<ul>
+<li><p><em>End-to-end alignment</em>: By default, Bowtie 2 performs end-to-end read alignment, i.e. it searches for alignments involving all of the read characters (so called “untrimmed” or “unclipped” alignment). The alignment score is calculated by subtracting penalties for each difference:</p>
+<ul>
+<li>mismatched base at a high-quality position: -6 by default</li>
+<li>length-2 read gap : -11 by default (-5 for the gap open, -3 for the first extension, -3 for the second extension)</li>
+</ul>
+<p>The best possible alignment score in end-to-end mode is 0.</p></li>
+<li><p><em>Local alignment</em>: In this mode, Bowtie 2 might “trim” or “clip” some read characters from one or both ends of the alignment if doing so maximizes the alignment score. The alignment score is calculated by subtracting penalties for each difference and adding bonuses for each match.</p>
+<ul>
+<li>mismatched base at a high-quality position: -6 by default</li>
+<li>length-2 read gap : -11 by default (-5 for the gap open, -3 for the first extension, -3 for the second extension)</li>
+<li>Matched base: +2</li>
+</ul>
+<p>The best possible score equals the match bonus times the length of the read.</p></li>
+</ul>
+</div>
+<div id="reporting-options" class="section level5">
+<h5><strong>Reporting options</strong></h5>
+<ul>
+<li><em>Default mode</em>: By default, Bowtie 2 searches for multiple distinct, valid alignments for each read and reports the best one.</li>
+<li><em>-k mode</em>: In -k mode, Bowtie 2 searches for up to N distinct, valid alignments for each read, where N equals the integer specified with the k parameter. It reports all alignments found, in descending order by alignment score.</li>
+<li><em>-a mode</em>: In -a mode, Bowtie 2 searches for all valid alignments and reports them in descending order by alignment score.</li>
+</ul>
+<p><br />
+</p>
+</div>
+</div>
+<div id="star" class="section level4">
+<h4><a href="https://evvail.com/wp-content/uploads/2021/05/STARmanual.pdf">STAR</a></h4>
+<div id="scoring-1" class="section level5">
+<h5><strong>Scoring</strong></h5>
+<p>The total score for each alignment is basically calculated as the sum of match scores, minus the sum of mismatch scores for mismatched bases, minus the penalties for insertions, deletions and genomic gaps:</p>
+<ul>
+<li>matches: +1</li>
+<li>mismatches: -1</li>
+<li>deletions:
+<ul>
+<li>deletion open penalty (scoreDelOpen) -2 by default</li>
+<li>deletion extension penalty per base (scoreDelBase) -2 by default (in addition to scoreDelOpen)</li>
+</ul></li>
+<li>insertions:
+<ul>
+<li>insertion open penalty (scoreInsOpen) -2 by default</li>
+<li>insertion extension penalty per base (scoreInsBase) -2 by default (in addition to scoreInsOpen)</li>
+</ul></li>
+<li>splice Junction Gaps:
+<ul>
+<li>splice junction penalty independent on intron motif (scoreGap) 0 by default</li>
+<li>non-canonical junction penalty (scoreGapNoncan) -8 by default (in addition to scoreGap)</li>
+<li>GC/AG and CT/GC junction penalty -4 by default (in addition to scoreGap)</li>
+<li>AT/AC and GT/AT junction penalty -8 by default (in addition to scoreGap)</li>
+</ul>
+The gap opening penalties for different intron motifs have to be selected according to the frequency expectations of different intron motifs in the species under study.</li>
+</ul>
+</div>
+<div id="reporting-options-1" class="section level5">
+<h5><strong>Reporting options</strong></h5>
+<p>The stitched combination with the highest score is chosen as the best alignment of a read. All the alignments scored within a user-defined range below the maximum score are considered multi-mappers. If the best alignment is shorter than the minimum allowed mapped length, has more mismatches than maximum allowed number of mismatches or fails to fulfill some additional criteria, the read will be reported as unmapped read.</p>
+<ul>
+<li>For multimapping reads, all alignments with scores within a certain user-defined range below the highest score are, by default, reported as follows: All alignments except one are marked as secondary alignment, whereas the primary alignment which is selected from the best ones (i.e. highest scoring), remains unmarked.</li>
+<li>The –outSAMprimaryFlag AllBestScore option will output all alignments with the best score as primary alignments.</li>
+<li>By default, the order of the multi-mapping alignments for each read is not truly random. The –outMultimapperOrder Random option outputs multiple alignments for each read in random order, and also also randomizes the choice of the primary alignment from the highest scoring alignments.</li>
+<li>The –outSAMmultNmax parameter limits the number of output alignments (SAM lines) for multimappers.</li>
+</ul>
+<p><br />
+</p>
+</div>
+</div>
 </div>
 <div id="mapping-with-r" class="section level2">
 <h2>Mapping with R</h2>
@@ -200,7 +274,17 @@ download.file(&quot;http://fgcz-gstore.uzh.ch/public/Yeast_Reads/20170313.A-G1_R
 library(&quot;BSgenome.Scerevisiae.UCSC.sacCer3&quot;)
 library(&quot;Rsubread&quot;)</code></pre>
 <p>Use the commands <em>export</em> to export method in the <em>BSgenome</em> package to write the genome as a fasta file on the local disk. Use the commands <em>buildindex</em> and <em>align</em> of the <em>Rsubread</em> package to map the reads. Consult the help pages of the respective functions. Build the index so that at most 2GB of RAM is used. Run the alignment with 4 threads. If you computer has less resources, adapt accordingly.</p>
+<pre class="r"><code>genome &lt;- BSgenome.Scerevisiae.UCSC.sacCer3
+out_file &lt;- file.path(tempdir(), &quot;Scerevisiae.fasta&quot;)
+BSgenome::export(genome, out_file)
+buildindex(basename = &quot;index_G1_R1&quot;, reference = out_file, memory = 2000)
+aligned_genome &lt;- align(index = &quot;index_G1_R1&quot;, readfile1 = &quot;G1_R1-sub.fastq&quot;, output_file = &quot;G1_R1_aligned&quot;, nthreads = 4)
+aligned_genome
+aligned_genome_trimmed &lt;- align(index = &quot;index_G1_R1&quot;, readfile1 = &quot;G1_R1-sub.fastq&quot;, output_file = &quot;G1_R1_aligned&quot;, nthreads = 4, nTrim5=5, nTrim3=5)
+aligned_genome_trimmed</code></pre>
 <p>What is the mapping rate of the reads? How does the mapping rate change if you trim 5 bases of both ends?</p>
+<p>Mapping rate <em>without</em> trimming: 90.3%<br />
+Mapping rate <em>with</em> trimming: 92.0%</p>
 </div>
 
 
