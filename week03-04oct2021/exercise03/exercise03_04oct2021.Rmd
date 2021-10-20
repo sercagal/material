@@ -6,68 +6,141 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(tibble)
+library(edgeR)
+library(matrixStats)
+library(reshape2)
+library(stats)
+library(pheatmap)
+library(ggfortify)
+library(RColorBrewer)
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
 
 ## Exploratory Data Analysis
 
 Do an exploratory data analysis of a matrix of expression values. The data consists of expression values for samples that were treated with DMSO and TSA. The samples were measured using three technologies: bulk, IFC96, IFC800. See the two RDS files `counts.RDS` and `phenodata.RDS`
 
 
-
 ## Data Import
-```{r }
-x = readRDS("counts.RDS")
-anno = readRDS("phenodata.RDS")
-head(anno)
-
+```{r data import, echo=FALSE}
+x = readRDS("/Users/serenagalli/Dropbox/Computational_Science/STA426/week03-04oct2021/exercise03/counts.RDS")
+anno = readRDS("/Users/serenagalli/Dropbox/Computational_Science/STA426/week03-04oct2021/exercise03/phenodata.RDS")
 ```
 
-## Compute and visualize basic statistics
 
+## Compute and visualize basic statistics
 How many replicates are there for each combination of factor levels?
+```{r basic statistics, echo=TRUE}
+table(anno)
+```
 How many genes have an expression value above 0 in each sample?
+```{r basic statistics 2, echo = TRUE}
+colSums(x != 0)
+```
+
 
 ## Normalize the data
 Scale the columns so that the total sum of all columns are identical
+```{r scaling}
+scaled_x <- cpm(x)
+```
 
 
 ## Transform the data to log-scale
-
 Use the function `log1p` to transform the data to log-scale
-
+```{r normalization}
+transformed_x <- log1p(scaled_x)
+```
 
 
 ## Visualize the distribution of the expression values
 Use violin plots and boxplots to visualize the distribution of the expression values
 Group and color by experimental factors.
 
-## Most variable genes
+Unfortunately, my deficit in basic R skills is bigger than I thought and I managed neither to define the 6 experimental groups nor to bring the dataframe in a form that can be used for plotting the graphs. For the plots, I wrote down a code, where x stands for thedataframe in the correct form.
 
+This is what I tried: 
+
+rownames(anno) <- colnames(x)
+df_merged <- merge(x, t(anno))
+ggplot(x, aes(fill= sample, x= experimental_factor, y= expression, color= Technology)) +
+  geom_violin() +
+  geom_boxplot(width=0.1,color="black",position = position_dodge(width =1))
+
+
+## Most variable genes
 Identify the 500 most variable genes (with largest variance across samples) and continue working with those
+
+```{r most variable features, echo=TRUE}
+rv <- rowVars(transformed_x)
+ind_top500 <- order(rv, decreasing=TRUE)[seq_len(min(500, length(rv)))]
+top_500 <- transformed_x[ind_top500,]
+```
 
 
 ## Sample correlations
 Compute and visualize the sample-to-sample correlations
+```{r correlation matrix, echo = TRUE}
+cor_matrix <- round(cor(top_500), 2)
+melted_cor_matrix <- melt(cor_matrix)
+ggplot(data = melted_cor_matrix, aes(x=Var1, y=Var2, fill=value)) + 
+  geom_tile() + theme(axis.title.y=element_blank(),
+        axis.text.y=element_blank())
+
+```
+
+
+
 
 ## Clustering
 Compute and visualize a hierarchical clustering of the samples, use package `hclust`
 
+```{r clustering}
+gene_dist <- dist(t(top_500))
+clustered <- hclust(gene_dist, method = "complete", members = NULL)
+plot(clustered, labels = FALSE)
+```
+
+
+
 ## Heatmap
 Use the package `pheatmap` to generate a heatmap of the expression data.
+```{r heatmap}
+pheatmap(top_500,
+        colorRampPalette(rev(brewer.pal(n = 7, name ="RdYlBu")))(100),
+        cluster_rows = T,
+        show_rownames = F,
+        scale = "row",
+        )
+```
+
+
 
 
 ## PCA
 
 In the exercise session, we saw a potential case where the normal PCA can be misleading. 
 
-```{r fig.align="center", out.width = "650px", echo=FALSE}
-knitr::include_graphics("./pca fault.png")
-```
-
 * Generate the data on the left, plot it as a scatter plot and color the points based on their class label. 
 * Do the PCA, plot the variance explained by the principal components. Select $k$ such that you explain $80\%$ of the variance in your data. 
 * Explain why this problem happens. 
 * Try to solve the problem with your desired method and do the PCA, and plot the variance explained by your PCs. Select $k$ in order to explain $80\%$ of the variance in your data. Is the $k$ different in comparison to the previous case? 
+ 
+I didn't figure out the difference between computing a regular PCA and a non-regular PCA. Since I got more than 2 dimension, I guess that I computed a non-regular PCA. 
+
+```{r PCA,  echo=TRUE}
+top_500.pca <- prcomp(top_500, center = TRUE,scale. = TRUE)
+summary(top_500.pca) # cumulative proportion of variance > 80% for PC 35, i.e. k = 35
+cumpro <- cumsum(top_500.pca$sdev^2/sum(top_500.pca$sdev^2))
+plot(cumpro, xlab = "PC #", ylab ="Amount of explained variance", main = "Cumulative variance plot")
+autoplot(top_500.pca)
+```
+
+
+
 
 
